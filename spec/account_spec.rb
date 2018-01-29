@@ -2,7 +2,8 @@
 
 describe Account do
 
-  let(:account) {Account.new}
+  let(:account) {Account.new(transaction)}
+  let(:transaction) { double :transaction}
 
   it 'is initialized with a balance of 0' do
     expect(account.balance).to eq 0

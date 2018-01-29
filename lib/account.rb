@@ -2,8 +2,9 @@ class Account
   attr_reader :balance, :transactions
 
 
-  def initialize
+  def initialize(transaction = Transaction)
     @balance = 0
+    @transaction = transaction
     @transactions = []
   end
 
@@ -16,5 +17,15 @@ class Account
     @balance -= amount
   end
 
+  private
+
+    def add_transaction(transaction)
+      transaction = new_transaction(type, amount, balance)
+      @transactions.push(transaction)
+    end
+
+    def new_transaction(type, amount, balance)
+      @transaction.new(type, amount, balance)
+    end
 
 end

@@ -18,9 +18,14 @@ describe Account do
   describe '#withdraw' do
 
     it 'allows user to withdraw money' do
+      account.deposit(500)
       expect{ account.withdraw(250) }.to change{ account.balance }.by(-250)
     end
-    
+
+    it 'prevents withdrawl of money without sufficient funds' do
+      expect{ account.withdraw(20) }.to raise_error('Insufficient funds availible')
+    end
+
   end
 
 end

@@ -5,7 +5,7 @@ describe Transaction do
   let(:transaction) {Transaction.new(type = 'debit', amount = 250, balance = 500)}
 
   it 'has the date the transaction was undertaken' do
-    expect(transaction.date).to eq(Date.today)
+    expect(transaction.date).to eq(Date.today.strftime("%d/%m/%Y"))
   end
 
   it 'has the type of transaction' do

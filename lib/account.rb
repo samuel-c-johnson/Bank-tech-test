@@ -16,6 +16,7 @@ class Account
   def withdraw(amount)
     raise 'Insufficient funds available' if @balance < amount
     @balance -= amount
+    add_transaction('debit', amount, @balance)
   end
 
   private

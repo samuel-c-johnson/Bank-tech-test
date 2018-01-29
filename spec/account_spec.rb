@@ -31,6 +31,11 @@ describe Account do
       expect{ account.withdraw(250) }.to change{ account.balance }.by(-250)
     end
 
+    it 'records transaction in the transactions array' do
+      account.deposit(500)
+      expect{ account.withdraw(200) }.to change{account.transactions.length}.by(1)
+    end
+
     it 'prevents withdrawl of money without sufficient funds' do
       expect{ account.withdraw(20) }.to raise_error('Insufficient funds available')
     end

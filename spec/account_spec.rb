@@ -2,7 +2,7 @@
 
 describe Account do
 
-  let(:account) {Account.new(transaction)}
+  let(:account) {Account.new}
   let(:transaction) { double :transaction}
 
   it 'is initialized with a balance of 0' do
@@ -17,6 +17,10 @@ describe Account do
 
     it 'allows user to deposit money' do
       expect{ account.deposit(1000) }.to change{ account.balance }.from(0).to(1000)
+    end
+
+    it 'adds a transaction to the transactions array' do
+      expect{ account.deposit(1000) }.to change{account.transactions.length}.by(1)
     end
   end
 

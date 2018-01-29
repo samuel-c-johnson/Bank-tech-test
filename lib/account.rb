@@ -10,6 +10,7 @@ class Account
 
   def deposit(amount)
     @balance += amount
+    add_transaction('credit', amount, @balance)
   end
 
   def withdraw(amount)
@@ -19,7 +20,7 @@ class Account
 
   private
 
-    def add_transaction(transaction)
+    def add_transaction(type, amount, balance)
       transaction = new_transaction(type, amount, balance)
       @transactions.push(transaction)
     end

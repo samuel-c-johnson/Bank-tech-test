@@ -27,7 +27,7 @@ describe Account do
     end
 
     it 'prevents withdrawl of money without sufficient funds' do
-      expect{ account.withdraw(20) }.to raise_error('Insufficient funds availible')
+      expect{ account.withdraw(20) }.to raise_error('Insufficient funds available')
     end
 
   end

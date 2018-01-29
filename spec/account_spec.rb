@@ -8,6 +8,10 @@ describe Account do
     expect(account.balance).to eq 0
   end
 
+  it 'has no transactions upon initialization' do
+    expect(account.transactions.length).to eq(0)
+  end
+
   describe '#deposit' do
 
     it 'allows user to deposit money' do

@@ -2,7 +2,7 @@
   "RSpec": {
     "coverage": {
       "/Users/samjohnson/Desktop/Makers_Programs/Week10/Bank/spec/account_spec.rb": [
-        1,
+        null,
         null,
         1,
         null,
@@ -38,31 +38,9 @@
         null,
         null
       ],
-      "/Users/samjohnson/Desktop/Makers_Programs/Week10/Bank/lib/account.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        5,
-        5,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
       "/Users/samjohnson/Desktop/Makers_Programs/Week10/Bank/spec/transaction_spec.rb": [
-        1,
-        1,
+        null,
+        null,
         null,
         1,
         null,
@@ -70,22 +48,10 @@
         null,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/samjohnson/Desktop/Makers_Programs/Week10/Bank/lib/transaction.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
         null,
         null
       ]
     },
-    "timestamp": 1517237792
+    "timestamp": 1517237944
   }
 }

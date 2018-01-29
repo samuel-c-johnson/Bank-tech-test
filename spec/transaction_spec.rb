@@ -1,5 +1,5 @@
-require 'transaction'
-require 'date'
+
+
 
 describe Transaction do
 

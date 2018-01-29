@@ -1,5 +1,9 @@
 require 'simplecov'
 require 'simplecov-console'
+require 'date'
+require 'transaction'
+require 'account'
+
 
 
 

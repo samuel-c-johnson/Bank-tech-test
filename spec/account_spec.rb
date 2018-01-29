@@ -1,4 +1,4 @@
-require 'account'
+
 
 describe Account do
 

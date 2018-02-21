@@ -1,7 +1,7 @@
 class Statement
   attr_reader :transactions
 
-  def intialize(transactions)
+  def initialize(transactions)
     @transactions = transactions
   end
 end
